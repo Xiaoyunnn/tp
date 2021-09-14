@@ -13,6 +13,7 @@ import seedu.address.model.person.Address;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Phone;
+import seedu.address.model.person.Remark;
 import seedu.address.model.tag.Tag;
 
 /**
@@ -80,6 +81,12 @@ public class ParserUtil {
         return new Address(trimmedAddress);
     }
 
+    public static Remark parseRemark(String remark) {
+        requireNonNull(remark);
+        String trimmedRemark = remark.trim();
+        return new Remark(trimmedRemark);
+    }
+
     /**
      * Parses a {@code String email} into an {@code Email}.
      * Leading and trailing whitespaces will be trimmed.
@@ -121,4 +128,5 @@ public class ParserUtil {
         }
         return tagSet;
     }
+
 }
