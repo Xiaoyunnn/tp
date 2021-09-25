@@ -103,7 +103,7 @@ Format: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [sch/SCHOOL] [strea
 * At least one of the optional fields must be provided.
 * Existing values will be updated to the input values.
 * When editing tags, the existing tags of the person will be removed i.e adding of tags is not cumulative.
-* You can delete the data for optional fields by type `sch/`/`stream/`/`lvl/` without specifying content after the prefixes.
+* You can delete the data for optional fields by typing `sch/`/`stream/`/`lvl/` without specifying content after the prefixes.
 * You can remove all the person’s tags by typing `t/` without
     specifying any tags after it.
 
